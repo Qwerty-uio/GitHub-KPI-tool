@@ -1,0 +1,6 @@
+﻿services:
+  github-kpi-tool:
+    image: github-kpi-tool
+    build:
+      context: .
+      dockerfile: GitHub-KPI-tool/Dockerfile
