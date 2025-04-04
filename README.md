@@ -2,6 +2,7 @@
 
 Requirements definition
 1. Target audience
+
    Who will use the system?
    - Developers
    - Project managers
@@ -9,11 +10,12 @@ Requirements definition
      
    How will they use it?
    - Request activity reports in the GitHub repository.
+  
    What reports do they need?
    - Commit statistics, PR, issues.
    - Size of changes, authors, task execution speed.
    - Diagrams and graphs.
-2. Functional requirements
+3. Functional requirements
 
    Connection to the GitHub API (with the ability to analyze multiple repositories).
 
