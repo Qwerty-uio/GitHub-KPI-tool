@@ -9,79 +9,91 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5d39bb7-1839-4376-a349-b655d689b1ac" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.GitHub-KPI-tool/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.GitHub-KPI-tool/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.GitHub-KPI-tool/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.GitHub-KPI-tool/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.GitHub-KPI-tool/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GitHub-KPI-tool.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GitHub-KPI-tool/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GitHub-KPI-tool/GitHub-KPI-tool.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GitHub-KPI-tool/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GitHub-KPI-tool/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GitHub-KPI-tool/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GitHub-KPI-tool/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GitHub-KPI-tool/obj/Debug/net9.0/.NETCoreApp,Version=v9.0.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GitHub-KPI-tool/obj/Debug/net9.0/GitHub-KPI-tool.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GitHub-KPI-tool/obj/Debug/net9.0/GitHub-KPI-tool.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GitHub-KPI-tool/obj/Debug/net9.0/GitHub-KPI-tool.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GitHub-KPI-tool/obj/Debug/net9.0/GitHub-KPI-tool.GlobalUsings.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GitHub-KPI-tool/obj/Debug/net9.0/GitHub-KPI-tool.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GitHub-KPI-tool/obj/Debug/net9.0/GitHub-KPI-tool.csproj.AssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GitHub-KPI-tool/obj/GitHub-KPI-tool.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GitHub-KPI-tool/obj/GitHub-KPI-tool.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GitHub-KPI-tool/obj/GitHub-KPI-tool.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GitHub-KPI-tool/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GitHub-KPI-tool/obj/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GitHub-KPI-tool/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GitHub-KPI-tool/obj/rider.project.restore.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/compose.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GitHub-KPI-tool-Application/DependencyRegistrations.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GitHub-KPI-tool-Application/Features/GitHub/GetGitHubMetricsPerPerson/GetGitHubMetricsByPersonQuery.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GitHub-KPI-tool-Application/Features/GitHub/GetGitHubMetricsPerPerson/GetGitHubMetricsByPersonQueryHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GitHub-KPI-tool-Application/Features/GitHub/GetGitHubMetricsPerPerson/GetGitHubMetricsByPersonQueryResult.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GitHub-KPI-tool/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GitHub-KPI-tool/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GitHub-KPI-tool/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GitHub-KPI-tool/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool.sln" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub-KPI-tool.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool/GitHub-KPI-tool.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub-KPI-tool/GitHub-KPI-tool.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub-KPI-tool/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub-KPI-tool/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool/obj/Debug/net9.0/GitHub-KPI-tool.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub-KPI-tool/obj/Debug/net9.0/GitHub-KPI-tool.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool/obj/Debug/net9.0/GitHub-KPI-tool.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub-KPI-tool/obj/Debug/net9.0/GitHub-KPI-tool.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool/obj/Debug/net9.0/GitHub-KPI-tool.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub-KPI-tool/obj/Debug/net9.0/GitHub-KPI-tool.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool/obj/Debug/net9.0/GitHub-KPI-tool.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub-KPI-tool/obj/Debug/net9.0/GitHub-KPI-tool.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool/obj/Debug/net9.0/GitHub-KPI-tool.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub-KPI-tool/obj/Debug/net9.0/GitHub-KPI-tool.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool/obj/GitHub-KPI-tool.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub-KPI-tool/obj/GitHub-KPI-tool.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool/obj/GitHub-KPI-tool.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub-KPI-tool/obj/GitHub-KPI-tool.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool/obj/GitHub-KPI-tool.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub-KPI-tool/obj/GitHub-KPI-tool.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub-KPI-tool/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub-KPI-tool/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub-KPI-tool/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub-KPI-tool/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DpaMonitoringSettings">
+    <option name="firstShow" value="false" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Qwerty-uio"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Qwerty-uio&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Qwerty-uio/GitHub-KPI-tool.git",
-    "accountId": "c90d00c8-6a11-4317-958b-7f36cb6ccecf"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Qwerty-uio/GitHub-KPI-tool.git&quot;,
+    &quot;accountId&quot;: &quot;c90d00c8-6a11-4317-958b-7f36cb6ccecf&quot;
   }
-}]]></component>
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c9ded36fb2cd5034614295529163d468da16adf72d43d77816c3161404c/CreatedAtActionResult.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GitHub-KPI-tool-Infrastructure/Contexts/AppDbContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GitHub-KPI-tool-Infrastructure/Extensions/ConfigurationExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GitHub-KPI-tool/Program.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2vGwOtlHoV9HLMc5YDNEzg4dJmM" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "E:/apbd",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.GitHub-KPI-tool: http.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/davidenko/Desktop/Tutorial4&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.GitHub-KPI-tool: http">
     <configuration name="GitHub-KPI-tool: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/GitHub-KPI-tool/GitHub-KPI-tool.csproj" />
@@ -135,11 +147,17 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
-      <deployment type="docker-compose.yml" />
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
-      <deployment type="dockerfile" />
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
       <method v="2" />
     </configuration>
     <configuration name="compose.yaml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
@@ -161,6 +179,26 @@
       <option name="presentableId" value="Default" />
       <updated>1743784689995</updated>
       <workItem from="1743784691243" duration="960000" />
+      <workItem from="1743791306476" duration="1225000" />
+      <workItem from="1743862563415" duration="76000" />
+      <workItem from="1743955450760" duration="6680000" />
+      <workItem from="1744019626565" duration="1859000" />
+      <workItem from="1744045432018" duration="998000" />
+      <workItem from="1744131287311" duration="343000" />
+      <workItem from="1744131646302" duration="2095000" />
+      <workItem from="1744133772478" duration="3575000" />
+      <workItem from="1744228303968" duration="3800000" />
+      <workItem from="1744287158928" duration="776000" />
+      <workItem from="1744287961397" duration="409000" />
+      <workItem from="1744305693998" duration="5087000" />
+      <workItem from="1744367597801" duration="1254000" />
+      <workItem from="1744368870178" duration="4177000" />
+      <workItem from="1744394193586" duration="835000" />
+      <workItem from="1744395047199" duration="63000" />
+      <workItem from="1744395136648" duration="45000" />
+      <workItem from="1744395254110" duration="1725000" />
+      <workItem from="1744397235003" duration="1362000" />
+      <workItem from="1744451981692" duration="1493000" />
     </task>
     <servers />
   </component>
