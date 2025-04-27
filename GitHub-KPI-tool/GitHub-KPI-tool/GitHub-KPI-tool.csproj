@@ -9,7 +9,19 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="MediatR" Version="12.5.0" />
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.3"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.3" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="9.0.3" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.3">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.3" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.3" />
+        <PackageReference Include="Npgsql" Version="9.0.3" />
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.3" />
+        <PackageReference Include="Octokit" Version="14.0.0" />
     </ItemGroup>
 
     <ItemGroup>
@@ -19,7 +31,8 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Controllers\" />
+      <ProjectReference Include="..\GitHub-KPI-tool-Application\GitHub-KPI-tool-Application.csproj" />
+      <ProjectReference Include="..\GitHub-KPI-tool-Infrastructure\GitHub-KPI-tool-Infrastructure.csproj" />
     </ItemGroup>
 
 </Project>
