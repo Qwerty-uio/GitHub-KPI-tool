@@ -5,9 +5,9 @@ namespace GitHub_KPI_tool_Infrastructure.ApiClients;
 
 public class GetPullRequests : IGetPullRequests
 {
-    private readonly GitHubClient _client;
+    private readonly IGitHubClient _client;
 
-    public GetPullRequests(GitHubClient client)
+    public GetPullRequests(IGitHubClient client)
     {
         _client = client;
     }

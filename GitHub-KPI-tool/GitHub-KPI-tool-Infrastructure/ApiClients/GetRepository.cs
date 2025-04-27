@@ -5,9 +5,9 @@ namespace GitHub_KPI_tool_Infrastructure.ApiClients;
 
 public class GetRepository : IGetRepository
 {
-    private readonly GitHubClient _client;
+    private readonly IGitHubClient _client;
 
-    public GetRepository(GitHubClient client)
+    public GetRepository(IGitHubClient client)
     {
         _client = client;
     }
