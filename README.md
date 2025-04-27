@@ -39,3 +39,8 @@ Requirements definition
    Report generation time <=5 Seconds
 
    Stable KPI assessment (one repository will have the same assessments for the same period)
+
+
+Redis Install 
+
+docker run -p 6379:6379 --name redis -d redis
