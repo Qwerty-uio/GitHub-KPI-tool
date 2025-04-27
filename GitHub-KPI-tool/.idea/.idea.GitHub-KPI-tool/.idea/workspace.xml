@@ -9,23 +9,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5d39bb7-1839-4376-a349-b655d689b1ac" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/GitHub-KPI-tool-Application/Features/GitHub/GetRepository/GetRepositoryQuery.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GitHub-KPI-tool-Application/Features/GitHub/GetRepository/GetRepositoryQueryHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GitHub-KPI-tool-Application/Features/GitHub/GetRepository/GetRepositoryQueryResult.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GitHub-KPI-tool-Infrastructure/ApiClients/GetRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GitHub-KPI-tool/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GitHub-KPI-tool/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool-Application/Entities/RepositoryEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub-KPI-tool-Application/Entities/RepositoryEntity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool-Application/Features/Repository/InsertRepository/CreateRepositoryQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub-KPI-tool-Application/Features/Repository/InsertRepository/CreateRepositoryQuery.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool-Application/Features/Repository/InsertRepository/CreateRepositoryQueryHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub-KPI-tool-Application/Features/Repository/InsertRepository/CreateRepositoryQueryHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool-Application/GitHub-KPI-tool-Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub-KPI-tool-Application/GitHub-KPI-tool-Application.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool-Infrastructure/Extensions/ConfigurationExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub-KPI-tool-Infrastructure/Extensions/ConfigurationExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool-Infrastructure/GitHub-KPI-tool-Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub-KPI-tool-Infrastructure/GitHub-KPI-tool-Infrastructure.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool-Infrastructure/Migrations/20250410123222_Initial.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool-Infrastructure/Migrations/20250410123222_Initial.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool-Infrastructure/Migrations/AppDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub-KPI-tool-Infrastructure/Migrations/AppDbContextModelSnapshot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool/Controllers/GitHubController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub-KPI-tool/Controllers/GitHubController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool/Controllers/RepositoryController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub-KPI-tool/Controllers/RepositoryController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool/Models/CreateRepositoryEntityRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub-KPI-tool/Models/CreateRepositoryEntityRequest.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,27 +60,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.GitHub-KPI-tool: http.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.057142857&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;#1 on base__logic&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/davidenko/Desktop/Tutorial4&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.GitHub-KPI-tool: http.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "XThreadsFramesViewSplitterKey": "0.057142857",
+    "git-widget-placeholder": "new-feature",
+    "last_opened_file_path": "C:/Users/davidenko/Desktop/Tutorial4",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.GitHub-KPI-tool: http">
     <configuration name="GitHub-KPI-tool: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/GitHub-KPI-tool/GitHub-KPI-tool.csproj" />
@@ -211,6 +195,7 @@
       <workItem from="1745326465552" duration="2516000" />
       <workItem from="1745515060988" duration="5450000" />
       <workItem from="1745667421333" duration="8540000" />
+      <workItem from="1745749296833" duration="779000" />
     </task>
     <servers />
   </component>
