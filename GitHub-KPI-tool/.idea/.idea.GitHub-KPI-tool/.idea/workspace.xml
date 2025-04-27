@@ -9,6 +9,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5d39bb7-1839-4376-a349-b655d689b1ac" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GitHub-KPI-tool/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GitHub-KPI-tool/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool-Infrastructure/ApiClients/GetPullRequests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub-KPI-tool-Infrastructure/ApiClients/GetPullRequests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool-Infrastructure/ApiClients/GetRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub-KPI-tool-Infrastructure/ApiClients/GetRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool-Infrastructure/Extensions/ConfigurationExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub-KPI-tool-Infrastructure/Extensions/ConfigurationExtensions.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -195,7 +198,7 @@
       <workItem from="1745326465552" duration="2516000" />
       <workItem from="1745515060988" duration="5450000" />
       <workItem from="1745667421333" duration="8540000" />
-      <workItem from="1745749296833" duration="932000" />
+      <workItem from="1745749296833" duration="2854000" />
     </task>
     <servers />
   </component>
