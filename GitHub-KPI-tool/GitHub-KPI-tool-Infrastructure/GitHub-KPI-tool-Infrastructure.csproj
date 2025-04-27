@@ -16,14 +16,11 @@
       </PackageReference>
       <PackageReference Include="Npgsql" Version="9.0.3" />
       <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.3" />
+      <PackageReference Include="Octokit" Version="14.0.0" />
     </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\GitHub-KPI-tool-Application\GitHub-KPI-tool-Application.csproj" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="ApiClients\" />
     </ItemGroup>
 
 </Project>

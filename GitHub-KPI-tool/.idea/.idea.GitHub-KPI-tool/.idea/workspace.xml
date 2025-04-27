@@ -9,28 +9,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5d39bb7-1839-4376-a349-b655d689b1ac" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/GitHub-KPI-tool-Application/DependencyRegistrations.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GitHub-KPI-tool-Application/Features/GitHub/GetGitHubMetricsPerPerson/GetGitHubMetricsByPersonQuery.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GitHub-KPI-tool-Application/Features/GitHub/GetGitHubMetricsPerPerson/GetGitHubMetricsByPersonQueryHandler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GitHub-KPI-tool-Application/Features/GitHub/GetGitHubMetricsPerPerson/GetGitHubMetricsByPersonQueryResult.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GitHub-KPI-tool/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GitHub-KPI-tool/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GitHub-KPI-tool-Application/Features/GitHub/GetRepository/GetRepositoryQuery.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GitHub-KPI-tool-Application/Features/GitHub/GetRepository/GetRepositoryQueryHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GitHub-KPI-tool-Application/Features/GitHub/GetRepository/GetRepositoryQueryResult.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GitHub-KPI-tool-Infrastructure/ApiClients/GetRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GitHub-KPI-tool/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GitHub-KPI-tool/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool.sln" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub-KPI-tool.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool/GitHub-KPI-tool.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub-KPI-tool/GitHub-KPI-tool.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub-KPI-tool/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub-KPI-tool/Properties/launchSettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool/obj/Debug/net9.0/GitHub-KPI-tool.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub-KPI-tool/obj/Debug/net9.0/GitHub-KPI-tool.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool/obj/Debug/net9.0/GitHub-KPI-tool.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub-KPI-tool/obj/Debug/net9.0/GitHub-KPI-tool.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool/obj/Debug/net9.0/GitHub-KPI-tool.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub-KPI-tool/obj/Debug/net9.0/GitHub-KPI-tool.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool/obj/Debug/net9.0/GitHub-KPI-tool.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub-KPI-tool/obj/Debug/net9.0/GitHub-KPI-tool.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool/obj/Debug/net9.0/GitHub-KPI-tool.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub-KPI-tool/obj/Debug/net9.0/GitHub-KPI-tool.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool/obj/GitHub-KPI-tool.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub-KPI-tool/obj/GitHub-KPI-tool.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool/obj/GitHub-KPI-tool.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub-KPI-tool/obj/GitHub-KPI-tool.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool/obj/GitHub-KPI-tool.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub-KPI-tool/obj/GitHub-KPI-tool.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub-KPI-tool/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub-KPI-tool/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub-KPI-tool/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub-KPI-tool/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool-Application/Entities/RepositoryEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub-KPI-tool-Application/Entities/RepositoryEntity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool-Application/Features/Repository/InsertRepository/CreateRepositoryQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub-KPI-tool-Application/Features/Repository/InsertRepository/CreateRepositoryQuery.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool-Application/Features/Repository/InsertRepository/CreateRepositoryQueryHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub-KPI-tool-Application/Features/Repository/InsertRepository/CreateRepositoryQueryHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool-Application/GitHub-KPI-tool-Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub-KPI-tool-Application/GitHub-KPI-tool-Application.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool-Infrastructure/Extensions/ConfigurationExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub-KPI-tool-Infrastructure/Extensions/ConfigurationExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool-Infrastructure/GitHub-KPI-tool-Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub-KPI-tool-Infrastructure/GitHub-KPI-tool-Infrastructure.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool-Infrastructure/Migrations/20250410123222_Initial.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool-Infrastructure/Migrations/20250410123222_Initial.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool-Infrastructure/Migrations/AppDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub-KPI-tool-Infrastructure/Migrations/AppDbContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool/Controllers/GitHubController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub-KPI-tool/Controllers/GitHubController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool/Controllers/RepositoryController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub-KPI-tool/Controllers/RepositoryController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GitHub-KPI-tool/Models/CreateRepositoryEntityRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GitHub-KPI-tool/Models/CreateRepositoryEntityRequest.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +51,14 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5c4741bfa6cb73975c23a27aade95c74489576e153ef512f35fa18e19920f1/GitHubClient.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8b389090db1e82a3bad932e5be42e219aadf3ae3be8cf647d4a3839e1a95d/RepositoryIssueRequest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/91749e7a5390f62617ecb5208b9b41e4ad7cf9754ccc17965a7dcbd85fa0b2a8/CommitRequest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/94f9d7b36cae2018976d5d67ea28b55f81ee29627d6843dc4d8361375bbb3a/IGitHubClient.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b3575a2f41d7c2dbfaa36e866b8a361e11dd7223ff82bc574c1d5d4b7522f735/Future.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c4629bf6f9a4ee3cd3865015914d17ea89640f398d1fa18a9d7d8a69c1da7/ApiOptions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c9ded36fb2cd5034614295529163d468da16adf72d43d77816c3161404c/CreatedAtActionResult.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ce37be1a06b16c6faa02038d2cc477dd3bca5b217ceeb41c5f2ad45c1bf9/ServiceProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GitHub-KPI-tool-Infrastructure/Contexts/AppDbContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GitHub-KPI-tool-Infrastructure/Extensions/ConfigurationExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GitHub-KPI-tool/Program.cs" root0="FORCE_HIGHLIGHTING" />
@@ -79,7 +81,8 @@
     &quot;.NET Launch Settings Profile.GitHub-KPI-tool: http.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.057142857&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;#1 on base__logic&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/davidenko/Desktop/Tutorial4&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -198,7 +201,16 @@
       <workItem from="1744395136648" duration="45000" />
       <workItem from="1744395254110" duration="1725000" />
       <workItem from="1744397235003" duration="1362000" />
-      <workItem from="1744451981692" duration="1493000" />
+      <workItem from="1744451981692" duration="2515000" />
+      <workItem from="1744455467662" duration="2161000" />
+      <workItem from="1744817956193" duration="2064000" />
+      <workItem from="1744821976119" duration="3461000" />
+      <workItem from="1745170697695" duration="683000" />
+      <workItem from="1745177950427" duration="2644000" />
+      <workItem from="1745240337863" duration="12396000" />
+      <workItem from="1745326465552" duration="2516000" />
+      <workItem from="1745515060988" duration="5450000" />
+      <workItem from="1745667421333" duration="8540000" />
     </task>
     <servers />
   </component>
@@ -220,5 +232,29 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/GitHub-KPI-tool/Controllers/GitHubController.cs</url>
+          <line>32</line>
+          <properties documentPath="E:\projects\GitHub-KPI-tool\GitHub-KPI-tool\GitHub-KPI-tool\Controllers\GitHubController.cs" containingFunctionPresentation="Method 'Get'">
+            <startOffsets>
+              <option value="1065" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1083" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="LaunchSettings">
+        <watch expression="((Octokit.ApiConnection) ((Octokit.UserEmailsClient) ((Octokit.UsersClient) this.&lt;tmp&gt;5__2.client.User).Email).ApiConnection).Connection" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

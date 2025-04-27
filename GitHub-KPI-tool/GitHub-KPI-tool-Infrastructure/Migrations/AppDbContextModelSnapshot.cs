@@ -21,7 +21,7 @@ namespace GitHub_KPI_tool_Infrastructure.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("GitHub_KPI_tool_Application.Entities.Repository", b =>
+            modelBuilder.Entity("GitHub_KPI_tool_Application.Entities.RepositoryEntity", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -35,12 +35,15 @@ namespace GitHub_KPI_tool_Infrastructure.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("text");
 
+                    b.Property<string>("Owner")
+                        .HasColumnType("text");
+
                     b.HasKey("Id");
 
                     b.ToTable("Repositories");
                 });
 
-            modelBuilder.Entity("GitHub_KPI_tool_Application.Entities.User", b =>
+            modelBuilder.Entity("GitHub_KPI_tool_Application.Entities.UserEntity", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -59,7 +62,7 @@ namespace GitHub_KPI_tool_Infrastructure.Migrations
                     b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("GitHub_KPI_tool_Application.Entities.UserRepositoryActivity", b =>
+            modelBuilder.Entity("GitHub_KPI_tool_Application.Entities.UserRepositoryActivityEntity", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
