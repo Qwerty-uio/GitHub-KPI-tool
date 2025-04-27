@@ -47,6 +47,7 @@ public static class ConfigurationExtensions
             {
                 Credentials = new Credentials("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")
             });
+
             services.AddScoped<IGetRepository, GetRepository>();
             services.AddScoped<IGetPullRequests, GetPullRequests>();
             services.AddScoped<IGetCommits, GetCommits>();
