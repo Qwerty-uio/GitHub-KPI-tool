@@ -42,11 +42,12 @@ public static class ConfigurationExtensions
         
         // Octokit.net
         {
-            services.AddSingleton<IGitHubClient, GitHubClient>(provider =>
-            new GitHubClient(new ProductHeaderValue("GitHub-KPI-Tool"))
-            {
-                Credentials = new Credentials("")
-            });
+            //TODO uncomment
+            //services.AddSingleton<IGitHubClient, GitHubClient>(provider =>
+            //new GitHubClient(new ProductHeaderValue("GitHub-KPI-Tool"))
+            //{
+            //    Credentials = new Credentials("")
+            //});
             services.AddScoped<IGetRepository, GetRepository>();
             services.AddScoped<IGetPullRequests, GetPullRequests>();
             services.AddScoped<IGetCommits, GetCommits>();
