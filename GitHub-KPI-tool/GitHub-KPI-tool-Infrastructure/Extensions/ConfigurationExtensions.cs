@@ -29,7 +29,7 @@ public static class ConfigurationExtensions
         {
             services.AddSingleton<IGitHubClient, GitHubClient>((provider => new GitHubClient(new ProductHeaderValue("GitHub-KPI-Tool"))
             {
-                Credentials = new Credentials("github token")
+                // token
             }));
             services.AddScoped<IGetRepository, GetRepository>();
             services.AddScoped<IGetPullRequests, GetPullRequests>();
