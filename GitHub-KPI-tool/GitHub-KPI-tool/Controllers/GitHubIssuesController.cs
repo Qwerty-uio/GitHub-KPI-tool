@@ -25,4 +25,18 @@ public class GitHubIssuesController: ControllerBase
         
         return Ok(result);
     }
+    
+    [HttpGet]
+    [Route("/github-kpi/issues/date")]
+    [Consumes("application/json")]
+    [Produces("application/json")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    public async Task<IActionResult> GetIssuesByDate(string owner, string repository, DateTimeOffset? dateFrom, CancellationToken cancellationToken = default)
+    {
+        var result = await _mediator.Send(new GetIssuesQuery(owner, repository){
+            DateFrom = dateFrom
+        });
+        
+        return Ok(result);
+    }
 }

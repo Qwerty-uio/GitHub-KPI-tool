@@ -1,8 +1,8 @@
-﻿using Octokit;
+﻿using GitHub_KPI_tool_Application.Models.Issue;
 
 namespace GitHub_KPI_tool_Application.Features.GitHub.GetIssues;
 
 public class GetIssuesResult
 {
-    public IReadOnlyList<Issue> Issues { get; set; }
+    public List<GitHubIssueModel> Issues { get; set; }
 }

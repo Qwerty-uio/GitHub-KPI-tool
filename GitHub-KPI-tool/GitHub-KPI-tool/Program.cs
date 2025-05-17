@@ -3,6 +3,7 @@ using GitHub_KPI_tool_Infrastructure.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
+DotNetEnv.Env.Load();
 
 builder.Services.AddControllers();
 

@@ -366,3 +366,5 @@ FodyWeavers.xsd
 # Folder
 obj/
 .idea/
+
+.env

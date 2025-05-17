@@ -1,4 +1,5 @@
-﻿using GitHub_KPI_tool_Application.Features.GitHub.GetCommits;
+﻿using GitHub_KPI_tool_Application.Features.Calculator.Commit;
+using GitHub_KPI_tool_Application.Features.GitHub.GetCommits;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -20,10 +21,37 @@ public class GitHubCommitsController : ControllerBase
     [Consumes("application/json")]
     [Produces("application/json")]
     [ProducesResponseType(StatusCodes.Status200OK)]
-    public async Task<ActionResult> Get(string owner, string repository)
+    public async Task<ActionResult> GetCommits(string owner, string repository)
     {
         var result = await _mediator.Send(new GetCommitsQuery(owner, repository));
         
+        return Ok(result);
+    }
+    
+    [HttpGet]
+    [Route("/github-kpi/commits/date")]
+    [Consumes("application/json")]
+    [Produces("application/json")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    public async Task<ActionResult> GetCommitsByDate(string owner, string repository, DateTimeOffset dateFrom, DateTimeOffset dateTo)
+    {
+        var result = await _mediator.Send(new GetCommitsQuery(owner, repository)
+        {
+            DateFrom = dateFrom,
+            DateTo = dateTo
+        });
+        
+        return Ok(result);
+    }
+
+    [HttpGet]
+    [Route("/github-kpi/commits/marks")]
+    [Consumes("application/json")]
+    [Produces("application/json")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    public async Task<ActionResult> GetCommitsMarks(string owner, string repository, DateTimeOffset dateFrom, DateTimeOffset dateTo)
+    {
+        var result = await _mediator.Send(new GetMarksForCommitsQuery(owner, repository, dateFrom, dateTo));
         return Ok(result);
     }
 }

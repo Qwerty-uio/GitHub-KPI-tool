@@ -1,5 +1,7 @@
 ﻿using GitHub_KPI_tool_Application.Abstraction.ApiClients;
+using GitHub_KPI_tool_Application.Abstraction.Calculator;
 using GitHub_KPI_tool_Application.Abstraction.Repositories;
+using GitHub_KPI_tool_Application.Calculator;
 using GitHub_KPI_tool_Infrastructure.ApiClients;
 using GitHub_KPI_tool_Infrastructure.Contexts;
 using GitHub_KPI_tool_Infrastructure.Repositories;
@@ -20,7 +22,7 @@ public static class ConfigurationExtensions
 
             ArgumentNullException.ThrowIfNull(connection);
 
-            options.UseNpgsql("");
+            options.UseNpgsql(connection);
         });
 
         //Redis
@@ -45,13 +47,16 @@ public static class ConfigurationExtensions
             services.AddSingleton<IGitHubClient, GitHubClient>(provider =>
             new GitHubClient(new ProductHeaderValue("GitHub-KPI-Tool"))
             {
-                Credentials = new Credentials("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")
+                Credentials = new Credentials(Environment.GetEnvironmentVariable("KEY"))
             });
+            
 
             services.AddScoped<IGetRepository, GetRepository>();
             services.AddScoped<IGetPullRequests, GetPullRequests>();
             services.AddScoped<IGetCommits, GetCommits>();
             services.AddScoped<IGetIssues, GetIssues>();
+            services.AddScoped<ICommitCalculator, CommitCalculator>();
+            services.AddScoped<IPullRequestCalculator, PullRequestCalculator>();
         }
 
         return services;
