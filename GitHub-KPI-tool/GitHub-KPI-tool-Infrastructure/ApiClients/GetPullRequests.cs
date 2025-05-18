@@ -64,7 +64,7 @@ public class GetPullRequests : IGetPullRequests
     public async Task<List<GitHubPullRequestModel>> GetByDate(string owner, string repository,
         DateTimeOffset? dateFrom, CancellationToken cancellationToken = default)
     {
-        var key = $"pullRequests-{owner}/{repository}";
+        var key = $"pullRequests-{owner}/{repository}/{dateFrom}";
 
         var pullRequests = new List<PullRequest>();
 

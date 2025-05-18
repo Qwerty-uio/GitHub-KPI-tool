@@ -5,8 +5,7 @@ namespace GitHub_KPI_tool_Application.Calculator;
 
 public class PullRequestCalculator : IPullRequestCalculator
 {
-
-    public async Task<IDictionary<string, int>> CalculateMarkForPullRequests(List<GitHubPullRequestModel> pullRequests)
+    public IDictionary<string, int> CalculateMarkForPullRequests(List<GitHubPullRequestModel> pullRequests)
     {
         var resultAddition = new Dictionary<string, double>();
         var resultDeletion = new Dictionary<string, double>();
@@ -18,7 +17,7 @@ public class PullRequestCalculator : IPullRequestCalculator
         double sumCommits = 0;
         double sumChangedFiles = 0;
         int sumChecked = 0;
-        
+
         foreach (var pullRequest in pullRequests)
         {
             double modifier = 0;
@@ -69,41 +68,17 @@ public class PullRequestCalculator : IPullRequestCalculator
 
         var result = new Dictionary<string, double>();
 
-        foreach (var key in resultAddition.Keys)
-        {
-            result.Add(key,
-                Math.Sqrt((Math.Pow(resultAddition[key] * 100.0 / sumAdditions, 2)
-                           + Math.Pow(resultDeletion[key] * 100.0 / sumDeletions, 2)
-                           + Math.Pow(resultCommits[key] * 100.0 / sumCommits, 2)
-                           + Math.Pow(resultFiles[key] * 100.0 / sumChangedFiles, 2)
-                           /*+ Math.Pow(resultChecked[key] * 100.0 / sumChecked, 2)*/) / (5))
-            );
-        }
-        
-        var sortedPairs = result.ToList();
-        sortedPairs.Sort((x, y) => x.Value.CompareTo(y.Value));
-        var differences = new List<KeyValuePair<int,double>>();
-        for (int i = 1; i < sortedPairs.Count; i++)
-        {
-            differences.Add(KeyValuePair.Create(i, sortedPairs[i].Value-sortedPairs[i-1].Value));
-        }
-        differences.Sort((x, y) => x.Value.CompareTo(y.Value));
-        differences.Reverse();
-        differences = differences.GetRange(0, 4);
+        Calculator.Add(result, resultAddition, sumAdditions);
+        Calculator.Add(result, resultDeletion, sumDeletions);
+        Calculator.Add(result, resultCommits, sumCommits);
+        Calculator.Add(result, resultChecked, sumChecked);
+        Calculator.Add(result, resultFiles, sumChangedFiles);
 
-        var marks = new Dictionary<string, int>();
-        int mark = 1;
-        int counter = 1;
-        foreach (var pair in sortedPairs)
+        foreach (var pair in result)
         {
-            marks.Add(pair.Key, mark);
-            if (differences.Exists((x) => x.Key == counter))
-            {
-                mark++;
-            }
-            counter++;
+            result[pair.Key] = Math.Sqrt(pair.Value/5);
         }
-        
-        return marks;
+
+        return Calculator.CalculateMarks(result);
     }
 }

@@ -17,7 +17,7 @@ public class GetMarksForPullRequestsHandler : IRequestHandler<GetMarksForPullReq
 
     public async Task<GetMarksForPullRequestsResult> Handle(GetMarksForPullRequestsQuery request, CancellationToken cancellationToken)
     {
-        var response = await _pullRequestCalculator.CalculateMarkForPullRequests(await _getPullRequests.GetByDate(request.Owner, request.Repository, request.DateFrom));
+        var response = _pullRequestCalculator.CalculateMarkForPullRequests(await _getPullRequests.GetByDate(request.Owner, request.Repository, request.DateFrom));
         var result = new GetMarksForPullRequestsResult()
         {
             MarksForPullRequests = response

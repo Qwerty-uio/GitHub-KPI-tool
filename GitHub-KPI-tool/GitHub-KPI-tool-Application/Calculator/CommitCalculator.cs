@@ -13,31 +13,7 @@ public class CommitCalculator : ICommitCalculator
     {
         var rawMarks = CalculateRawMarkForCommits(commits);
 
-        var sortedPairs = rawMarks.ToList();
-        sortedPairs.Sort((x, y) => x.Value.CompareTo(y.Value));
-        var differences = new List<KeyValuePair<int,double>>();
-        for (int i = 1; i < sortedPairs.Count; i++)
-        {
-            differences.Add(KeyValuePair.Create(i, sortedPairs[i].Value-sortedPairs[i-1].Value));
-        }
-        differences.Sort((x, y) => x.Value.CompareTo(y.Value));
-        differences.Reverse();
-        differences = differences.GetRange(0, 4);
-
-        var marks = new Dictionary<string, int>();
-        int mark = 1;
-        int counter = 1;
-        foreach (var pair in sortedPairs)
-        {
-            marks.Add(pair.Key, mark);
-            if (differences.Exists((x) => x.Key == counter))
-            {
-                mark++;
-            }
-            counter++;
-        }
-        
-        return marks;
+        return Calculator.CalculateMarks(rawMarks);
     }
 
     public IDictionary<string, double> CalculateRawMarkForCommits(List<GitHubCommitModel> commits)
@@ -46,9 +22,10 @@ public class CommitCalculator : ICommitCalculator
         var resultDeletion = new Dictionary<string, double>();
         var resultTotal = new Dictionary<string, double>();
         var resultAmount = new Dictionary<string, double>();
-        int sum = 0;
-        int sumAdd = 0;
-        int sumDel = 0;
+        
+        int sumAddition = 0;
+        int sumDeletion = 0;
+        int sumTotal = 0;
         int amount = 0;
 
         foreach (var commit in commits)
@@ -75,25 +52,27 @@ public class CommitCalculator : ICommitCalculator
                     resultAmount[commit.Author]++;
                 }
 
-                sumAdd += commit.Stats.Additions;
-                sumDel += commit.Stats.Deletions;
-                sum += commit.Stats.Total;
+                sumAddition += commit.Stats.Additions;
+                sumDeletion += commit.Stats.Deletions;
+                sumTotal += commit.Stats.Total;
                 amount++;
             }
         }
 
         var result = new Dictionary<string, double>();
         
-        foreach (var key in resultAddition.Keys)
+        Calculator.Add(result, resultAddition,sumAddition);
+        Calculator.Add(result, resultDeletion,sumDeletion);
+        Calculator.Add(result, resultTotal,sumTotal);
+        Calculator.Add(result, resultAmount,amount);
+
+        foreach (var pair in resultAddition)
         {
-            result.Add(key,
-                Math.Sqrt((Math.Pow(resultAddition[key] * 100.0 / sumAdd, 2)
-                           + Math.Pow(resultDeletion[key] * 100.0 / sumDel, 2)
-                           + Math.Pow(resultTotal[key] * 100.0 / sum, 2)
-                           + Math.Pow(resultAmount[key] * 100.0 / amount, 2)) / (4))
-            );
+            result[pair.Key] = Math.Sqrt(pair.Value/4);
         }
         
         return result;
     }
+    
+    
 }

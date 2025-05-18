@@ -57,6 +57,7 @@ public static class ConfigurationExtensions
             services.AddScoped<IGetIssues, GetIssues>();
             services.AddScoped<ICommitCalculator, CommitCalculator>();
             services.AddScoped<IPullRequestCalculator, PullRequestCalculator>();
+            services.AddScoped<IIssueCalculator, IssueCalculator>();
         }
 
         return services;

@@ -1,4 +1,5 @@
-﻿using GitHub_KPI_tool_Application.Features.GitHub.GetIssues;
+﻿using GitHub_KPI_tool_Application.Features.Calculator.Issue;
+using GitHub_KPI_tool_Application.Features.GitHub.GetIssues;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -36,6 +37,18 @@ public class GitHubIssuesController: ControllerBase
         var result = await _mediator.Send(new GetIssuesQuery(owner, repository){
             DateFrom = dateFrom
         });
+        
+        return Ok(result);
+    }
+    
+    [HttpGet]
+    [Route("/github-kpi/issues/marks")]
+    [Consumes("application/json")]
+    [Produces("application/json")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    public async Task<IActionResult> GetIssuesMarks(string owner, string repository, DateTimeOffset dateFrom, CancellationToken cancellationToken = default)
+    {
+        var result = await _mediator.Send(new GetMarksForIssuesQuery(owner, repository, dateFrom));
         
         return Ok(result);
     }

@@ -15,9 +15,9 @@ public class GitHubIssueModel
     }
 
     public int Number { get; set; }
-    public string? Title { get; set; }
-    public string? Body { get; set; }
-    public string? User { get; set; }
+    public string Title { get; set; }
+    public string Body { get; set; }
+    public string User { get; set; }
     public DateTimeOffset? CreatedAt { get; set; }
     public DateTimeOffset? UpdatedAt { get; set; }
     public DateTimeOffset? ClosedAt { get; set; }
