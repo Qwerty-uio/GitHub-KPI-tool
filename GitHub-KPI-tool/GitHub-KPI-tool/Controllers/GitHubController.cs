@@ -1,4 +1,6 @@
 ﻿using GitHub_KPI_tool_Application.Features.GitHub.GetGitHubMetricsPerPerson;
+using GitHub_KPI_tool_Application.Features.GitHub.GetRepository;
+using GitHub_KPI_tool_Application.Features.GitHub.GetPullRequests;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -20,6 +22,7 @@ public class GitHubController : ControllerBase
     /// </summary>
     /// <param name="id">The id which belongs to person</param>
     [HttpGet]
+    [Route("/github-kpi")]
     [Consumes("application/json")]
     [Produces("application/json")]
     [ProducesResponseType(StatusCodes.Status200OK)]
@@ -29,4 +32,8 @@ public class GitHubController : ControllerBase
         
         return Ok(result);
     }
+    
+    
+    
+    
 }

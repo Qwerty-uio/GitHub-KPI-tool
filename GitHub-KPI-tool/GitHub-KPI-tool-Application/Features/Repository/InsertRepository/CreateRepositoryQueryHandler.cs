@@ -19,6 +19,7 @@ public class CreateRepositoryQueryHandler: IRequestHandler<CreateRepositoryQuery
         {
             var result = await _repositoryRepository.InsertAsync(new Entities.RepositoryEntity()
             {
+                Owner = request.Owner,
                 Name = request.Name,
                 Description = request.Description
             });
